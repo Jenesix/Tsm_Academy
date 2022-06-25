@@ -81,6 +81,11 @@ export default {
           title: 'Inspire',
           to: '/inspire',
         },
+        {
+          icon: 'mdi-apps',
+          title: 'slider',
+          to: '/slider',
+        },
       ],
       miniVariant: false,
       right: true,
