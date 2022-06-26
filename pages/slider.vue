@@ -1,17 +1,35 @@
 <template>
-  <v-carousel v-model="model">
-    <v-carousel-item v-for="(color, i) in colors" :key="color">
-      <v-sheet :color="color" height="100%" tile>
-        <v-row class="fill-height" align="center" justify="center">
-          <div class="text-h2">Slide {{ i + 1 }}</div>
-        </v-row>
-      </v-sheet>
-    </v-carousel-item>
-  </v-carousel>
+  <v-container>
+    <v-carousel class="mt-5">
+      <v-carousel-item
+        v-for="(item, i) in items"
+        :key="i"
+        :src="item.src"
+        reverse-transition="fade-transition"
+        transition="fade-transition"
+      >
+      </v-carousel-item>
+    </v-carousel>
+  </v-container>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'SliderPage',
+
+  data() {
+    return {
+      items: [
+        {
+          src: '/picture/test.jpg',
+        },
+        {
+          src: '/picture/test1.jpg',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style>
