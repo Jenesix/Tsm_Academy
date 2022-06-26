@@ -26,6 +26,9 @@ export default {
         {
           src: '/picture/test1.jpg',
         },
+        {
+          src: '/picture/test2.jpg',
+        },
       ],
     }
   },
