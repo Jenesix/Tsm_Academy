@@ -10,9 +10,7 @@
       <v-spacer></v-spacer>
       <div>
         <v-btn text> Test1 </v-btn>
-
         <v-btn text> Test2 </v-btn>
-
         <v-btn text> Test3 </v-btn>
         <v-btn text> Test4 </v-btn>
         <v-btn text> Test5 </v-btn>
@@ -30,27 +28,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/',
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Dance',
-          to: '/dance',
-        },
-        {
-          icon: 'mdi-apps',
-          title: 'Slider',
-          to: '/slider',
-        },
-      ],
       miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'TSM_Academy',
     }
   },
 }
