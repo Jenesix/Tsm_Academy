@@ -1,44 +1,12 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer
-      v-model="drawer"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      fixed
-      app
-    >
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-          class="yellow--text text--darken-3"
-        >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
     <v-app-bar
       class="yellow--text text--darken-3"
       :clipped-left="clipped"
       fixed
       app
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn icon @click.stop="miniVariant = !miniVariant">
-        <v-icon class="yellow--text text--darken-3"
-          >mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon
-        >
-      </v-btn>
-      <v-app-bar-title>Title</v-app-bar-title>
-
+      <v-app-bar-title> Title</v-app-bar-title>
       <v-spacer></v-spacer>
       <div>
         <v-btn text> Test1 </v-btn>
@@ -70,8 +38,8 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire',
+          title: 'Dance',
+          to: '/dance',
         },
         {
           icon: 'mdi-apps',

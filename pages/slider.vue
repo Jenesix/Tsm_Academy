@@ -14,7 +14,7 @@
       <div>
         <v-row justify="center" align="center">
           <v-col cols="11" class="mt-8"
-            ><v-btn class="mr-10" height="40%" width="20%"
+            ><v-btn class="mr-10" height="40%" width="20%" to="/dance"
               ><v-card height="200px"></v-card>
             </v-btn>
             <v-btn class="ma-10" height="40%" width="20%"
